@@ -1,0 +1,23 @@
+/*for the formating of each element on the screen*/
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+h3 {
+  font-size: 1em;
+  font-family: $font;
+}
+
+.grid {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}

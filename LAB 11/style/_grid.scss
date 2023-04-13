@@ -1,0 +1,49 @@
+@import 'variable';
+
+/*for the formatting of the boxes*/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.grid-item {
+  padding: 10px;
+  text-align: center;
+  font-family: $font;
+}
+
+
+
+/*for the grid of each boxes*/
+.grid-item-square2x2 {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+  background-color: $s2x2;
+}
+.grid-item-rectangle2x1 {
+  grid-column: 3 / span 2;
+  grid-row: 1 / span 1;
+  background-color: $r2x1col;
+}
+
+.grid-item-rectangle3x1 {
+  grid-column: 1 / span 1;
+  grid-row: 3 / span 3;
+  background-color:$r2x1;
+}
+
+.grid-item-squareC2R3 {
+  grid-column: 2 / span 1;
+  grid-row: 3 / span 1;
+  background-color: $sc2r3;
+}
+
+/*for the 1 row x 1 col squares*/
+.grid-item-square {
+  grid-column: span 1;
+  grid-row: span 1;
+  background-color: $square;
+}
+
